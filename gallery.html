@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/34fc0a3bbd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Gallery</title>
+    <style>
+        .element_gifts {
+            position: absolute;
+            width: 0em;
+            height: 0em;
+            font-size: 0px;
+        }
+        #products{
+            visibility: hidden;
+        }   
+    </style>
+</head>
+<body>
+    <!-- Start Header (NavBar + Logo) -->
+    <div id="header" class="row fixed-top-header">
+        <!-- Start: Navbar -->
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="filter" href="shop-page.html" data-filter="all">SHOP</a>
+                    <!-- <ul class="subnav" id="filter_button">
+                                <li><a class="filter" data-filter="MUG">Mugs</a></li>
+                                <li><a href="#" class="filter" data-filter="Jewelry" >Jewelries</a></li>
+                                <li><a href="#" class="filter" data-filter="CLOCK">Clocks</a></li>
+                                <li><a href="#" class="filter" data-filter="Stuffed animals" >Stuffed Animal</a></li>
+                                <li><a href="#" class="filter" data-filter="Perfume">Perfumes</a></li>
+                            </ul> -->
+                </li>
+                <li><a href="features.html">FEATURES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <!-- Logo -->
+                <a  style="padding:0 50px" href="index.html"> <img src="Media/logo/logo1(black).png" width="150"
+                        height="60"></a>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="cart">
+                    <a href="cart.html" id="cart-shop">
+                        <span id="item-counter">0</span>
+                        <!-- <span>CART</span> -->
+                        <span class="glyphicon glyphicon-shopping-cart" id="count-item" data-count="0"></span>
+                    </a>
+                </li>
+                <li><a href="#" id="member">MEMBER</a></li>
+            </ul>
+        </div>
+        <!-- End: Navbar -->
+    </div>
+    <!-- End: Header -->
+
+    <!-- Start: Responsive Nav -->
+    <div class="row rs-nav" style="background-color: #ffe5d8;">
+        <div class="col-xs-12 col-sm-12">
+            <div class="pull-left">
+                <span onclick="openNav()" class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+    
+            <a href="index.html">
+                <img class="left-logo" src="Media/logo/logo1(black).png">
+            </a>
+    
+            <div class="pull-right">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Hidden: Nav -->
+        <div id="mySidenav" class="side-nav pull-left">
+            <img style="margin-bottom: 10px" src="Media/logo/logo1(white).png">
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="shop-page.html">Shop</a>
+            <a href="features.html">Features</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about-us.html">About Us</a>
+            <hr>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="sidemember">Member</a>
+            <hr>
+            <div class="closeX pointer-cursor">
+                <p class="closebtn ti-close" onclick="closeNav()">
+                <p>
+            </div>
+        </div>
+        <!-- End: Responsive Nav -->
+
+    <!-- Start: Side-bar -->
+    <div class="side-bar">
+        <a href="#"><span class="fa-icon-sb fa fa-facebook"></span></a>
+        <a href="#"><span class="fa-icon-sb fa fa-instagram"></span></a>
+        <a href="#"><span class="fa-icon-sb fa fa-twitter"></span></a>
+    </div>
+    <!-- End: Side-bar -->
+
+<!-- Start: Right-side-bar -->
+<div class="right-side-bar">
+    <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+    <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+    <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
+ </div>
+ <!-- End: Right-side-bar -->
+        
+<!--Start: Gallery Content -->
+
+<!-- Start: Section 1 -->
+<div class="row section">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="bg-section text-center">
+            <!-- Content Title -->
+            <div class="section-overlay">
+                <h1>Merry Christmas</h1>
+                <div class="album-btn text-capitalize pointer-cursor">
+                    <a href="#album-content">See Album</a>
+                </div>
+            </div>
+            <!-- End: Content Title -->
+        </div>
+    </div>
+</div>
+<!-- End: Section 1 -->
+
+
+<!-- Start: Section 2 -->
+<div class="container" id="album-content">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 margin-bottom-30px">
+        <div class="album-item">
+            <img src="Media/gallery/item04.jpg" width="100%" srcset="">
+        </div>
+        <div class="album-caption text-justify">
+            <h3>Festival for Family.</h3>
+            <p>Festival-going may have changed since having children, but there's really no need to miss out. Check out our round-up of the best family-friendly events coming up this summer.</p>
+        </div>
+        <div class="detail-btn margin">
+            <a href="#">See More</a>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 margin-bottom-30px">
+        <div class="album-item">
+            <img src="Media/gallery/item05.jpg" width="100%" srcset="">
+        </div>
+        <div class="album-caption text-justify">
+            <h3>An iconic christmas tree.</h3>
+            <p>Christmas trees are the definition of holiday grandeur. Explore the Shop's magnificent holiday displays or take a break from holiday shopping and visit a couple of your favorite freshly cut pines or firs.</p>
+        </div>
+        <div class="detail-btn margin">
+            <a href="#">See More</a>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 margin-bottom-30px">
+        <div class="album-item">
+            <img src="Media/gallery/item01.jpg" width="100%" srcset="">
+        </div>
+        <div class="album-caption text-justify">
+            <h3>Christmas Wishes.</h3>
+            <p>“May the true spirit of Christmas shine in your heart and light your path.” "Wishing you and your loved ones a blessed Christmas." "May God bless and keep you during the holiday season and all through the year.</p>
+        </div>
+        <div class="detail-btn margin">
+            <a href="#">See More</a>
+        </div>
+    </div>
+</div>
+<!-- End: Section 2 -->
+
+
+<!-- Start: Section 3 -->
+<div class="container" style="margin-top: 50px;">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+        <img src="Media/gallery/santa-clauses.jpg" width="90%">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="section-caption text-justify">
+            <h3>Santa Claus.</h3>
+            <p style="font-size: 16px">Santa Claus, also known as Father Christmas, Saint Nicholas, Saint Nick, Kris Kringle, or simply Santa, is a legendary[1] character originating in Western Christian culture who is said to bring gifts on Christmas Eve of toys and candy to well-behaved children,[2] and either coal or nothing to naughty children. He is said to accomplish this with the aid of Christmas elves, who make the toys in his workshop at the North Pole, and flying reindeer who pull his sleigh through the air.</p>
+            <p style="font-size: 16px">The modern character of Santa Claus was based on traditions surrounding the historical Saint Nicholas (a fourth-century Greek bishop and gift-giver of Myra), the English figure of Father Christmas, and the Dutch figure of Sinterklaas (also based on Saint Nicholas).</p>
+        </div>
+        <div class="detail-btn margin">
+            <a href="#">See More</a>
+        </div>   
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <div class="side-way-text text-center">
+            <h2>Best picture of the festival</h2>
+        </div>
+    </div>
+
+</div>
+<div class="product-layout" id="products"></div>
+<!-- End: Section 3 -->
+
+<!--End: Gallery Content -->
+
+
+<!-- Start: Footer -->
+<div class="row footer">
+    
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Media/logo/logo1(white).png" width="150" height="60">
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact">
+            <p style="font-size: 20px">590 Cach Mang Thang Tam Street, Ward 11, District 3, Ho Chi Minh City, Vietnam </p>
+            <p style="font-size: 20px;">giftshop@fpt.edu.vn</p> 
+            <p style="font-size: 20px;">022 261 560 93 </p>
+            
+        </div>
+        <!-- Social Media -->
+        <div class="social-icons">
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-facebook"></span></a>
+            </div>
+
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-instagram"></span></a>
+            </div>
+
+            <div class="icons">
+                <a href="#"><span class="fa-icon fa fa-twitter"></span></a>
+            </div>
+        </div>
+
+        <div class="copyright text-center">
+            <h4 style="font-weight: 200;">Copyright &copy 2021 by Gift Shop. All rights reserved.</h4>
+        </div>
+
+    </div>
+</div>
+<!-- End: Footer -->
+
+<!-- Modal Member -->
+<div class="modal fade" id="memberModal" role="dialog">
+    <div class="modal-dialog modal-lg row">
+    
+            <!-- Modal content-->
+        <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header text-center" style="padding:35px 50px; background: #ffe5d8">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 style="letter-spacing: 1.5px;">MEMBERSHIP</h4>
+              </div>
+
+              <!--Start: Modal Body -->
+              <!-- Left-Body -->
+              <div class="modal-body col-md-6" style="padding:40px 50px; background: #f4f9ff">
+                <div class="text-center modal-header">
+                    <h3>Log in </h3>
+                </div>
+                
+                <form role="form" class="margin">
+
+                  <div class="form-group">
+                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+                    <input type="email" onfocus="show(this)" onblur="hide(this)"  class="form-control" id="usremail" placeholder="">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                    <input type="password" onfocus="show(this)" onblur="hide(this)"  class="form-control" id="psw" placeholder="">
+                  </div>
+
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>Remember me</label>
+                  </div>
+
+                    <button type="submit" class="login-btn btn btn-block">Login</button>
+                </form>
+                
+              </div>
+              <!-- Right-Body -->
+              <div class="modal-body col-md-6 bg-member" style="padding:40px 50px;">
+                <div class="text-center modal-header">
+                    <h3>Log in with</h3>
+                </div>
+
+                <div class="social-platform margin">
+                    <ul class="social-list">
+                        <li><a href="#facebook"><i class="fb fa-icon fa fa-facebook-f"></i></a></li>
+                        <li><a href="#twitter"><i class="twt fa-icon fa fa-twitter"></i></a></li>
+                        <li><a href="#google"><i class="gg fa-icon fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                
+              </div>
+              <!-- End: Modal Body -->
+    </div>
+  </div> 
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
